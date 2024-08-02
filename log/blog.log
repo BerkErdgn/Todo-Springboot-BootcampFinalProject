@@ -3407,3 +3407,803 @@ org.webjars.NotFoundException: 1 nolu veri yok
 2024-08-02T21:33:10.418+03:00 DEBUG 18136 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2024-08-02T21:33:10.420+03:00 DEBUG 18136 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TodoDto(id=1, title=deneme1, completed=false), TodoDto(id=2, title=deneme2, completed=false), TodoD (truncated)...]
 2024-08-02T21:33:10.421+03:00 DEBUG 18136 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-02T21:42:52.341+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 6984 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-02T21:42:52.347+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-02T21:42:52.421+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-02T21:42:52.422+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-02T21:42:54.087+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T21:42:54.185+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2024-08-02T21:42:55.840+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-02T21:42:55.869+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T21:42:55.869+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T21:42:55.996+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T21:42:55.998+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3573 ms
+2024-08-02T21:42:56.332+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:43:01.707+03:00 DEBUG 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-02T21:43:01.709+03:00 DEBUG 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-02T21:43:02.668+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T21:43:02.731+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:43:08.784+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:43:13.814+03:00 ERROR 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+2024-08-02T21:43:13.821+03:00 ERROR 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Could not create connection to database server. Attempted reconnect 3 times. Giving up.] [n/a]
+2024-08-02T21:43:13.824+03:00  WARN 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Could not create connection to database server. Attempted reconnect 3 times. Giving up.] [n/a]
+2024-08-02T21:43:13.830+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-02T21:43:13.856+03:00  INFO 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-02T21:43:13.922+03:00 ERROR 6984 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Could not create connection to database server. Attempted reconnect 3 times. Giving up.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.berkerdgn.Todo_Springboot_BootcampFinalProject.TodoSpringbootBootcampFinalProjectApplication.main(TodoSpringbootBootcampFinalProjectApplication.java:67) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Could not create connection to database server. Attempted reconnect 3 times. Giving up.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Could not create connection to database server. Attempted reconnect 3 times. Giving up.] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:51) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	... 24 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:899) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 45 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:843) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 59 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-java-8.0.28.jar:8.0.28]
+	... 61 common frames omitted
+
+2024-08-02T21:43:50.278+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 10116 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-02T21:43:50.285+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-02T21:43:50.398+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-02T21:43:50.403+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-02T21:43:51.999+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T21:43:52.091+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 1 JPA repository interface.
+2024-08-02T21:43:53.438+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-02T21:43:53.459+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T21:43:53.459+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T21:43:53.577+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T21:43:53.581+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3175 ms
+2024-08-02T21:43:53.903+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:43:54.227+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-02T21:43:54.231+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T21:43:54.244+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-02T21:43:54.386+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-02T21:43:54.387+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-02T21:43:55.420+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T21:43:56.924+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T21:43:57.738+03:00  WARN 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T21:43:58.131+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-02T21:43:59.499+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-02T21:43:59.635+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-02T21:43:59.716+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-02T21:43:59.773+03:00  WARN 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-02T21:44:00.671+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-02T21:44:00.687+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-02T21:44:00.831+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-02T21:44:00.850+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 11.18 seconds (process running for 12.06)
+2024-08-02T21:44:00.860+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-02T21:44:01.613+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-02T21:44:01.615+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-02T21:44:01.616+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-02T21:44:01.616+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-02T21:44:01.617+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-02T21:44:01.619+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1828523d
+2024-08-02T21:44:01.620+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@16fbd73
+2024-08-02T21:44:01.621+03:00 DEBUG 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-02T21:44:01.622+03:00  INFO 10116 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-08-02T21:44:48.333+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 16268 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-02T21:44:48.339+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-02T21:44:48.411+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-02T21:44:48.413+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-02T21:44:50.611+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T21:44:50.693+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interface.
+2024-08-02T21:44:52.077+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-02T21:44:52.094+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T21:44:52.095+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T21:44:52.244+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T21:44:52.245+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3827 ms
+2024-08-02T21:44:52.514+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:44:54.008+03:00 DEBUG 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-02T21:44:54.009+03:00 DEBUG 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-02T21:44:54.652+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T21:44:54.684+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:44:56.981+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:44:58.030+03:00 ERROR 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : FATAL: password authentication failed for user "postgres"
+2024-08-02T21:44:58.043+03:00 ERROR 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+2024-08-02T21:44:58.046+03:00  WARN 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+2024-08-02T21:44:58.052+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-02T21:44:58.077+03:00  INFO 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-02T21:44:58.101+03:00 ERROR 16268 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.2.jar:3.3.2]
+	at com.berkerdgn.Todo_Springboot_BootcampFinalProject.TodoSpringbootBootcampFinalProjectApplication.main(TodoSpringbootBootcampFinalProjectApplication.java:67) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 20 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution [FATAL: password authentication failed for user "postgres"] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:185) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:98) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	... 24 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:698) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:207) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.Driver.makeConnection(Driver.java:446) ~[postgresql-42.7.3.jar:42.7.3]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.3.jar:42.7.3]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:437) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 44 common frames omitted
+
+2024-08-02T21:49:09.330+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 3528 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-02T21:49:09.338+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-02T21:49:09.440+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-02T21:49:09.442+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-02T21:49:11.325+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T21:49:11.440+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2024-08-02T21:49:12.796+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-02T21:49:12.828+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T21:49:12.830+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T21:49:13.112+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T21:49:13.113+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3669 ms
+2024-08-02T21:49:13.413+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T21:49:13.766+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-02T21:49:13.769+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T21:49:13.786+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-02T21:49:13.996+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-02T21:49:14.000+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-02T21:49:14.869+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T21:49:16.393+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T21:49:17.152+03:00  WARN 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T21:49:17.368+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-02T21:49:18.681+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-02T21:49:18.836+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-02T21:49:18.903+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-02T21:49:18.972+03:00  WARN 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-02T21:49:20.053+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-02T21:49:20.097+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-02T21:49:20.339+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-02T21:49:20.373+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 11.719 seconds (process running for 12.629)
+2024-08-02T21:49:20.394+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-02T21:49:20.697+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-02T21:49:20.701+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-02T21:49:20.703+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-02T21:49:20.704+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-02T21:49:20.704+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-02T21:49:20.708+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@10efa1d1
+2024-08-02T21:49:20.709+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@355f3325
+2024-08-02T21:49:20.711+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-02T21:49:20.712+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-08-02T21:49:25.734+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2024-08-02T21:49:25.745+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.berkerdgn.Todo_Springboot_BootcampFinalProject.controller.api.impl.TodoApiImpl#todoApiList()
+2024-08-02T21:49:25.958+03:00  INFO 3528 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] c.b.T.b.services.impl.TodoServicesImpl   : todo title list: 12
+2024-08-02T21:49:25.964+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-02T21:49:25.971+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TodoDto(id=1, title=deneme1, completed=false), TodoDto(id=2, title=deneme2, completed=false), TodoD (truncated)...]
+2024-08-02T21:49:26.002+03:00 DEBUG 3528 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-02T23:24:16.103+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 22420 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-02T23:24:16.108+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-02T23:24:16.222+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-02T23:24:16.223+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-02T23:24:19.236+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T23:24:19.414+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2024-08-02T23:24:22.624+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-02T23:24:22.744+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T23:24:22.746+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T23:24:23.017+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T23:24:23.019+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6795 ms
+2024-08-02T23:24:23.634+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T23:24:24.413+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-02T23:24:24.417+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T23:24:24.438+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-02T23:24:24.719+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-02T23:24:24.721+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-02T23:24:26.779+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T23:24:28.330+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T23:24:29.272+03:00  WARN 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T23:24:29.489+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-02T23:24:30.505+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-02T23:24:30.723+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-02T23:24:30.887+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-02T23:24:30.999+03:00  WARN 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-02T23:24:32.040+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-02T23:24:32.059+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-02T23:24:32.292+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-02T23:24:32.322+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 16.865 seconds (process running for 17.928)
+2024-08-02T23:24:32.342+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-02T23:24:33.405+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-02T23:24:33.406+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-02T23:24:33.407+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-02T23:24:33.408+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-02T23:24:33.409+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-02T23:24:33.411+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@386eb8a9
+2024-08-02T23:24:33.413+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@42266b7d
+2024-08-02T23:24:33.414+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-02T23:24:33.415+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-08-02T23:24:38.149+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2024-08-02T23:24:38.159+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.berkerdgn.Todo_Springboot_BootcampFinalProject.controller.api.impl.TodoApiImpl#todoApiList()
+2024-08-02T23:24:38.298+03:00  INFO 22420 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] c.b.T.b.services.impl.TodoServicesImpl   : todo title list: 3
+2024-08-02T23:24:38.303+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-02T23:24:38.307+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TodoDto(id=1, title=deneme1, completed=false), TodoDto(id=2, title=deneme2, completed=false), TodoD (truncated)...]
+2024-08-02T23:24:38.329+03:00 DEBUG 22420 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-02T23:27:11.156+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-02T23:27:11.159+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-02T23:27:11.223+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-02T23:27:11.224+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-02T23:27:12.774+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T23:27:12.862+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interface.
+2024-08-02T23:27:14.138+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-02T23:27:14.156+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-02T23:27:14.157+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-02T23:27:14.257+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-02T23:27:14.258+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3033 ms
+2024-08-02T23:27:14.515+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T23:27:14.816+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-02T23:27:14.818+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T23:27:14.830+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-02T23:27:14.975+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-02T23:27:14.977+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-02T23:27:15.854+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T23:27:17.064+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T23:27:17.993+03:00  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T23:27:18.159+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-02T23:27:19.005+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-02T23:27:19.081+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-02T23:27:19.142+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-02T23:27:19.196+03:00  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-02T23:27:20.091+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-02T23:27:20.104+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-02T23:27:20.264+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-02T23:27:20.285+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 9.783 seconds (process running for 10.65)
+2024-08-02T23:27:20.306+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-02T23:27:22.501+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-02T23:27:22.504+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-02T23:27:22.507+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-02T23:27:22.509+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-02T23:27:22.510+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-02T23:27:22.513+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3b872b9c
+2024-08-02T23:27:22.515+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@30f97b6d
+2024-08-02T23:27:22.516+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-02T23:27:22.517+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2024-08-02T23:27:23.279+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2024-08-02T23:27:23.290+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.berkerdgn.Todo_Springboot_BootcampFinalProject.controller.api.impl.TodoApiImpl#todoApiList()
+2024-08-02T23:27:23.455+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] c.b.T.b.services.impl.TodoServicesImpl   : todo title list: 6
+2024-08-02T23:27:23.461+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-02T23:27:23.465+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TodoDto(id=1, title=deneme1, completed=false), TodoDto(id=2, title=deneme2, completed=false), TodoD (truncated)...]
+2024-08-02T23:27:23.492+03:00 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-02T23:27:59.112+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-08-02T23:27:59.237+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T23:27:59.242+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-08-02T23:27:59.285+03:00  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-08-03T01:57:59.378+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T01:57:59.379+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T01:58:00.011+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T01:58:00.040+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2024-08-03T01:58:00.332+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T01:58:00.334+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T01:58:00.334+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T01:58:00.387+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T01:58:00.388+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms
+2024-08-03T01:58:00.495+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-08-03T01:58:00.510+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T01:58:00.511+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-08-03T01:58:00.511+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T01:58:00.558+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T01:58:00.558+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T01:58:00.641+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T01:58:00.704+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T01:58:00.943+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T01:58:01.020+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-03T01:58:01.633+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T01:58:01.662+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T01:58:01.674+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T01:58:01.689+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T01:58:02.334+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T01:58:02.345+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T01:58:02.435+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T01:58:02.461+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 3.124 seconds (process running for 52.826)
+2024-08-03T01:58:02.465+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-03T01:58:02.469+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T01:58:03.371+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T01:58:03.371+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T01:58:03.372+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-03T01:58:03.373+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-03T01:58:03.374+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-03T01:58:03.375+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@34af2ca4
+2024-08-03T01:58:03.376+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@71c75777
+2024-08-03T01:58:03.376+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-03T01:58:03.377+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-08-03T01:58:03.378+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2024-08-03T01:58:03.379+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.berkerdgn.Todo_Springboot_BootcampFinalProject.controller.api.impl.TodoApiImpl#todoApiList()
+2024-08-03T01:58:03.388+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] c.b.T.b.services.impl.TodoServicesImpl   : todo title list: 6
+2024-08-03T01:58:03.390+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T01:58:03.391+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TodoDto(id=1, title=deneme1, completed=false), TodoDto(id=2, title=deneme2, completed=false), TodoD (truncated)...]
+2024-08-03T01:58:03.397+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T01:58:45.035+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-08-03T01:58:45.215+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T01:58:45.218+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-08-03T01:58:45.264+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-08-03T01:58:45.361+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T01:58:45.362+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T01:58:45.974+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T01:58:45.996+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2024-08-03T01:58:46.359+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T01:58:46.361+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T01:58:46.363+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T01:58:46.440+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T01:58:46.442+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1075 ms
+2024-08-03T01:58:46.548+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-08-03T01:58:46.565+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T01:58:46.566+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-08-03T01:58:46.567+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T01:58:46.603+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T01:58:46.604+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T01:58:46.653+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T01:58:46.703+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T01:58:46.843+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T01:58:46.897+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-03T01:58:47.251+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T01:58:47.278+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T01:58:47.292+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T01:58:47.310+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T01:58:47.838+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T01:58:47.845+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T01:58:48.523+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T01:58:48.535+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 3.214 seconds (process running for 98.9)
+2024-08-03T01:58:48.537+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-03T01:58:48.559+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T01:58:49.725+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-03T01:58:49.726+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-03T01:58:49.727+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-08-03T01:58:49.727+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-08-03T01:58:49.728+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-08-03T01:58:49.729+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2483672
+2024-08-03T01:58:49.730+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2a48afca
+2024-08-03T01:58:49.730+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-08-03T01:58:49.730+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-03T01:58:49.731+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/todo/api/v1/list", parameters={}
+2024-08-03T01:58:49.732+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.berkerdgn.Todo_Springboot_BootcampFinalProject.controller.api.impl.TodoApiImpl#todoApiList()
+2024-08-03T01:58:49.741+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] c.b.T.b.services.impl.TodoServicesImpl   : todo title list: 9
+2024-08-03T01:58:49.743+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-03T01:58:49.744+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TodoDto(id=1, title=deneme1, completed=false), TodoDto(id=2, title=deneme2, completed=false), TodoD (truncated)...]
+2024-08-03T01:58:49.749+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-08-03T02:09:54.222+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 28 deletions, 1 modification)
+2024-08-03T02:09:54.353+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:09:54.355+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-08-03T02:09:54.379+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-08-03T02:09:54.536+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T02:09:54.537+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T02:09:55.414+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T02:09:55.417+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-08-03T02:09:55.622+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T02:09:55.624+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T02:09:55.625+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T02:09:55.676+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T02:09:55.677+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1135 ms
+2024-08-03T02:09:55.756+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-08-03T02:09:55.774+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T02:09:55.776+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-08-03T02:09:55.778+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T02:09:55.830+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T02:09:55.832+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T02:09:55.889+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T02:09:55.920+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:09:56.005+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T02:09:56.083+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-08-03T02:09:56.448+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T02:09:56.481+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T02:09:56.502+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T02:09:56.521+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T02:09:57.102+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T02:09:57.114+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T02:09:57.167+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T02:09:57.177+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 2.74 seconds (process running for 767.543)
+2024-08-03T02:09:57.186+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-08-03T02:09:58.563+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 28 class path changes (28 additions, 0 deletions, 0 modifications)
+2024-08-03T02:09:58.837+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:09:58.839+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-08-03T02:09:58.862+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-08-03T02:09:58.961+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T02:09:58.962+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T02:09:59.491+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T02:09:59.509+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2024-08-03T02:09:59.880+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T02:09:59.883+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T02:09:59.884+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T02:09:59.942+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T02:09:59.943+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 977 ms
+2024-08-03T02:10:00.050+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-08-03T02:10:00.078+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T02:10:00.079+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-08-03T02:10:00.080+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T02:10:00.123+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T02:10:00.124+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T02:10:00.178+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T02:10:00.228+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:10:00.357+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T02:10:00.404+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-03T02:10:00.711+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T02:10:00.733+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T02:10:00.743+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T02:10:00.759+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T02:10:01.193+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T02:10:01.202+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T02:10:01.263+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T02:10:01.271+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 2.349 seconds (process running for 771.637)
+2024-08-03T02:10:01.274+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-03T02:10:01.291+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' errorControllerHandleWebRequest (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-08-03T02:11:34.176+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-03T02:11:34.281+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:11:34.282+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-08-03T02:11:34.288+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-08-03T02:11:34.397+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T02:11:34.399+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T02:11:35.196+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T02:11:35.210+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2024-08-03T02:11:35.363+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T02:11:35.364+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T02:11:35.365+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T02:11:35.407+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T02:11:35.408+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2024-08-03T02:11:35.484+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-08-03T02:11:35.495+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T02:11:35.496+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-08-03T02:11:35.497+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T02:11:35.541+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T02:11:35.542+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T02:11:35.599+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T02:11:35.648+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:11:35.751+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T02:11:35.784+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-03T02:11:36.026+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T02:11:36.046+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T02:11:36.056+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T02:11:36.071+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T02:11:36.250+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T02:11:36.254+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T02:11:36.275+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T02:11:36.280+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 1.924 seconds (process running for 866.646)
+2024-08-03T02:11:36.282+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-03T02:11:36.291+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-03T02:11:51.013+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 28 deletions, 1 modification)
+2024-08-03T02:11:51.250+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:11:51.252+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-08-03T02:11:51.319+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-08-03T02:11:51.452+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T02:11:51.463+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T02:11:51.948+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T02:11:51.950+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-08-03T02:11:52.123+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T02:11:52.124+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T02:11:52.126+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T02:11:52.163+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T02:11:52.164+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 684 ms
+2024-08-03T02:11:52.217+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-08-03T02:11:52.229+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T02:11:52.230+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-08-03T02:11:52.231+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T02:11:52.262+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T02:11:52.263+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T02:11:52.311+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T02:11:52.336+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:11:52.382+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T02:11:52.420+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-08-03T02:11:52.773+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T02:11:52.831+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T02:11:52.855+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T02:11:52.886+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T02:11:53.514+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T02:11:53.525+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T02:11:53.601+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T02:11:53.609+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 2.218 seconds (process running for 883.975)
+2024-08-03T02:11:53.617+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-08-03T02:11:54.954+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 28 class path changes (28 additions, 0 deletions, 0 modifications)
+2024-08-03T02:11:55.078+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:11:55.079+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-08-03T02:11:55.132+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-08-03T02:11:55.245+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Starting TodoSpringbootBootcampFinalProjectApplication using Java 17.0.6 with PID 18612 (C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject\target\classes started by Berk in C:\Users\Berk\Documents\GitHub\Todo-Springboot-BootcampFinalProject)
+2024-08-03T02:11:55.246+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : The following 1 profile is active: "frontend"
+2024-08-03T02:11:55.705+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-03T02:11:55.719+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2024-08-03T02:11:55.925+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 4444 (http)
+2024-08-03T02:11:55.926+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-03T02:11:55.927+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-03T02:11:55.971+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-03T02:11:55.972+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 724 ms
+2024-08-03T02:11:56.046+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-08-03T02:11:56.065+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:file:./memory_persist/todo user=SA
+2024-08-03T02:11:56.066+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-08-03T02:11:56.066+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/todo'
+2024-08-03T02:11:56.130+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-08-03T02:11:56.132+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-08-03T02:11:56.190+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-03T02:11:56.253+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-03T02:11:56.435+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-03T02:11:56.491+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 8 mappings in 'requestMappingHandlerMapping'
+2024-08-03T02:11:56.852+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-03T02:11:56.887+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-03T02:11:56.898+05:30 DEBUG 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-03T02:11:56.920+05:30  WARN 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-08-03T02:11:57.371+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-03T02:11:57.380+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2024-08-03T02:11:57.433+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 4444 (http) with context path '/'
+2024-08-03T02:11:57.445+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] pringbootBootcampFinalProjectApplication : Started TodoSpringbootBootcampFinalProjectApplication in 2.244 seconds (process running for 887.81)
+2024-08-03T02:11:57.448+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] c.b.T.u.commandlinerunner.MainRunner     : Todos
+2024-08-03T02:11:57.482+05:30  INFO 18612 --- [Todo-Springboot-BootcampFinalProject] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ErrorMvcAutoConfiguration#basicErrorController:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) found beans of type 'org.springframework.boot.web.servlet.error.ErrorController' errorControllerHandleWebRequest (OnBeanCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
