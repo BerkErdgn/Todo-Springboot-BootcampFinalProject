@@ -10,4 +10,6 @@ public interface ITodoRepository extends CrudRepository<TodoEntity, Integer> {
 
     Optional<TodoEntity> findByTitle(String title);
 
+    Optional<TodoEntity> findById(Integer id);
+
 }
