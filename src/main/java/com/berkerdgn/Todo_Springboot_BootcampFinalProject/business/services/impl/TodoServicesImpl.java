@@ -127,4 +127,25 @@ public class TodoServicesImpl implements ITodoServices<TodoDto, TodoEntity> {
         }
         return null;
     }
+
+    // DELETE COMPLETED
+    @Override
+    @Transactional
+    public String todoServiceDeleteCompletedData() {
+        List<TodoDto> allTodos = todoServiceList();
+        List<Integer> idsToDelete = new ArrayList<>();
+
+        for (TodoDto todoDto : allTodos) {
+            if (todoDto.isCompleted()) {
+                idsToDelete.add(todoDto.getId());
+            }
+        }
+
+        if (!idsToDelete.isEmpty()) {
+            iTodoRepository.deleteAllById(idsToDelete);
+            return idsToDelete.size() + " tamamlanmış todo silindi.";
+        }
+
+        return "Silinecek tamamlanmış todo bulunamadı.";
+    }
 }

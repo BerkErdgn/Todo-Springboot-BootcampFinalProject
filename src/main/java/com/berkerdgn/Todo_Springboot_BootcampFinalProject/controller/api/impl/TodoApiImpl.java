@@ -39,6 +39,14 @@ public class TodoApiImpl implements ITodoApi<TodoDto> {
         return ResponseEntity.ok(iTodoServices.todoCategoryDeleteAllData());
     }
 
+    // DELETE COMPLETED
+    // http://localhost:4444/todo/api/v1/delete/completed
+    @DeleteMapping(value = "/delete/completed")
+    public ResponseEntity<String> todoApiDeleteCompletedData() {
+        String result = iTodoServices.todoServiceDeleteCompletedData();
+        return ResponseEntity.ok(result);
+    }
+
     // CRUD
     // CREATE
     // http://localhost:4444/todo/api/v1/create
@@ -91,4 +99,5 @@ public class TodoApiImpl implements ITodoApi<TodoDto> {
     public ResponseEntity<?> todoApiDeleteById(@PathVariable(name = "id", required = false) Integer id) {
         return ResponseEntity.ok().body(iTodoServices.todoServiceDeleteById(id));
     }
+
 }

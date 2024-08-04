@@ -22,7 +22,6 @@ import java.util.Map;
 // API
 @RestController
 @CrossOrigin
-// Spring error için benim yazdığım class,method
 @Component
 public class ErrorControllerHandleWebRequest implements ErrorController {
     // ErrorController

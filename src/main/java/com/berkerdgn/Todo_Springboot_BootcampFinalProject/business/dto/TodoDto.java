@@ -19,7 +19,7 @@ public class TodoDto implements Serializable {
 
     private int id;
 
-    @AUniqueTodo
+    // @AUniqueTodo
     @NotEmpty(message = "Lütfen doldurun")
     @Size(min = 2, message = "Lütfen faha uzun bir cümle girin")
     private String title;

@@ -12,6 +12,9 @@ public interface ITodoApi<D> {
     // DELETE ALL
     public ResponseEntity<String> todoCategoryApiDeleteAllData();
 
+    // DELETE ALL COMPLETED DATA
+    public ResponseEntity<String> todoApiDeleteCompletedData();
+
     // CRUDE
     // CREATE
     public ResponseEntity<?> todoApiCreate(D d);

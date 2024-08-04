@@ -28,11 +28,11 @@ public class MainRunner {
         return args -> {
             log.info("Todos");
             System.out.println("Todo");
-            TodoEntity todoEntity1 = TodoEntity.builder().title("deneme1").build();
+            TodoEntity todoEntity1 = TodoEntity.builder().title("Eve Alışveriş yap").build();
             iTodoRepository.save(todoEntity1);
-            TodoEntity todoEntity2 = TodoEntity.builder().title("deneme2").build();
+            TodoEntity todoEntity2 = TodoEntity.builder().title("Yazılım çalış").build();
             iTodoRepository.save(todoEntity2);
-            TodoEntity todoEntity3 = TodoEntity.builder().title("deneme3").build();
+            TodoEntity todoEntity3 = TodoEntity.builder().title("SpringBoot çalışmasını bitir.").build();
             iTodoRepository.save(todoEntity3);
         };
     }

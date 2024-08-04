@@ -13,7 +13,7 @@ public class UniqueTodoValidation implements ConstraintValidator<AUniqueTodo, St
     @Override
     public boolean isValid(String title, ConstraintValidatorContext constraintValidatorContext) {
         if (title == null) {
-            return true; // Null kontrolü DTO'da yapıldığından burada true döndürüyoruz
+            return true;
         }
 
         boolean isSameTitle = iTodoRepository.findByTitle(title).isPresent();

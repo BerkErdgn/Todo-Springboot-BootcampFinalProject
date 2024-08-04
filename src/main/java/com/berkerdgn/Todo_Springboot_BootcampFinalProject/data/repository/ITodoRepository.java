@@ -12,4 +12,6 @@ public interface ITodoRepository extends CrudRepository<TodoEntity, Integer> {
 
     Optional<TodoEntity> findById(Integer id);
 
+    Optional<TodoEntity> deleteAllByTodoIdIn(Iterable<Integer> ids);
+
 }
