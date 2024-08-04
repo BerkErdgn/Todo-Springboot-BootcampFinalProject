@@ -20,7 +20,7 @@ Bu proje, kullanıcıların yapılacaklar listesi oluşturmasına, yönetmesine 
 
 | Main Screen |
 | ----------- |
-| ![]()       |
+| ![](https://github.com/BerkErdgn/Todo-Springboot-BootcampFinalProject/blob/main/sc/sc1.PNG?raw=true)       |
 
 ## Download
 
